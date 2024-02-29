@@ -1,8 +1,19 @@
 <!doctype html>
 <html>
 <head>
-    <title>CodeIgniter Tutorial</title>
+<link href="<?= base_url('CSS/header.css') ?>" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="<?= base_url('images/favicon.ico') ?>">
+    <title>About me</title>
 </head>
 <body>
-
-    <h1><?= esc($title) ?></h1>
+    <div class="topnav">
+        <h1>CONNECT WITH ME!</h1>
+            <div class="logos">
+                <!--Social media icons by icons8-->
+                <a href="https://www.facebook.com/mondavid.olarte/" target="_blank"><img style="margin-right: 15px;"src = "./images/logos/fb.png"></a>
+                <a href=#x><img style="margin-right: 15px;" src = "./images/logos/x.png"></a>
+                <a href="#ig"><img style="margin-right: 15px;" src = "./images/logos/insta.png"></a>
+                <a href="https://github.com/Roadom" target="_blank"><img style="margin-right: 15px;" src = "./images/logos/github.png"></a>
+                <a href="https://www.linkedin.com/in/mon-david-olarte-70a031249/" target="_blank"><img style="margin-right: 15px;" src = "./images/logos/linked.png"></a>
+            </div>
+        </div>
