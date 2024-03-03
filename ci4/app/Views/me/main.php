@@ -20,6 +20,7 @@
       <p>Thank you for visiting my website! I hope it looks pleasant in the eyes and will provide you with enough information to know me better! You can connect with me 
         through several medias found at the top.
       </p>
+      
       <div id="soundboard">
         <h3 id="sound-desc">Some of the sounds inside my head</h3>
         <span class="reaction-btn" onclick="sound('anita max win')">🧢</span>
@@ -28,10 +29,12 @@
         <span class="reaction-btn" onclick="sound('vine boom')">💥</span>
         <span class="reaction-btn" onclick="sound('huh')">🐢</span>
       </div>
+      <p style="text-align:center;"><a href="<?= base_url('comments') ?>" style="color:white;">View comments</a></p>
     </div>
     <div class = "about-me-img">
       <img id="me-pic" src='https://i.pinimg.com/736x/28/02/cc/2802cc44b270ba60bb0e8532a5711ae5.jpg'>
     </div>
+    
   </div>
   </section>
  
@@ -44,7 +47,7 @@
   <div class="center-images">
     <a href="#interest-1" style="text-decoration: none;"">
     <div class="interest-pic">
-      <img src="images/gaming.png">
+      <img src="<?= base_url('images/gaming.png') ?>">
       <div class="overlay">
         <p class="interest-pic-text">VIDEO GAMES</p>
       </div>
@@ -52,7 +55,7 @@
     </a>
     <a href="#interest-2" style="text-decoration: none;">
     <div class="interest-pic" style="margin-left: 20px;">
-      <img src="./images/shows.png">
+      <img src="<?= base_url('images/shows.png') ?>">
       <div class="overlay">
         <p class="interest-pic-text">TV SHOWS AND MOVIES</p>
       </div>
@@ -60,7 +63,7 @@
     </a>
     <a href="#interest-3" style="text-decoration: none;"">
     <div class="interest-pic" style="margin-left: 20px;">
-      <img src="./images/computer.png">
+      <img src="<?= base_url('images/computer.png') ?>">
       <div class="overlay">
         <p class="interest-pic-text">COMPUTERS</p>
       </div>
@@ -110,17 +113,18 @@
   <div class="interest">
     <h1 style="margin-top: 80px">Shows & Movies that I Enjoyed Watching</h1>
     <div class="gallery">
-      <a href="images/shows/bbad-thumb.jpg" data-lightbox="shows" data-title="Breaking Bad (+ Better Call Saul) - Watched it before it was cool but still didn't expect it to be that good."><img src="./images/shows/bbad.png"></a>
-      <a href="images/shows/ingbad-thumb.jpg" data-lightbox="shows" data-title="Inglourious Basterds - Classic Tarantino movie. Also has one of the most memorable opening scenes."><img src="./images/shows/ingbad.jpg"></a>
-      <a href="images/shows/rdogs-thumb.jpg" data-lightbox="shows" data-title="Reservoir Dogs - Another Tarantino movie with an interesting way of storytelling similar to Pulp Fiction."><img src="./images/shows/rdogs.jpg"></a>
-      <a href="images/shows/boys-thumb.jpg" data-lightbox="shows" data-title="The Boys - A show that will give you a nice break to the oversaturation of superhero media. The show may be little too graphic for some though."><img src="./images/shows/boys.jpg"></a>
-      <a href="images/shows/spiderbai-thumb.jpg" data-lightbox="shows" data-title = "Spiderverse - Undoubtedly one of the best animated movies of all time. The characters and story are just as interesting too so it isn't just for show."><img src="./images/shows/spider.png"></a>
-      <a href="images/shows/jjk-thumb.png" data-lightbox="shows" data-title="Jujutsu Kaisen - Are you strong because your nah i'd win or did you leave it all behind and his overwhelming intensity and stand proud you're strong because with this treasure I summon always bet on hakari? I'm you.&lt;/p&gt;"><img src="./images/shows/jjk.png"></a>
-      <a href="images/shows/hxh-thumb.jpg" data-lightbox="shows" data-title="Hunter x Hunter - One of the best shonens of all time that is currently on a hiatus."><img src="./images/shows/hxh.jpg"></a>
-      <a href="images/shows/fmab-thumb.jpg" data-lightbox="shows" data-title="Fullmetal Alchemist: Brotherhood - One of the first animes that I binged because it was so good. I really enjoyed the world building and the development of both major and minor characters."><img src="./images/shows/fmab.jpg"></a>
-      <a href="images/shows/invincible-thumb.jpg" data-lightbox="shows" data-title="Invincible - Similar vibe to The Boys but at the same time, very different."><img src="./images/shows/invincible.jpg"></a>
-      <a href="images/shows/hood-thumb.jpg" data-lightbox="shows" data-title="Batman: Under the Red Hood - A movie about my favorite comic book character who isn't really popular outside of Batman fans."><img src="./images/shows/hood.png"></a>
-    </div>
+    <a href="<?= base_url('images/shows/bbad-thumb.jpg') ?>" data-lightbox="shows" data-title="Breaking Bad (+ Better Call Saul) - Watched it before it was cool but still didn't expect it to be that good."><img src="<?= base_url('images/shows/bbad.png') ?>"></a>
+    <a href="<?= base_url('images/shows/ingbad-thumb.jpg') ?>" data-lightbox="shows" data-title="Inglourious Basterds - Classic Tarantino movie. Also has one of the most memorable opening scenes."><img src="<?= base_url('images/shows/ingbad.jpg') ?>"></a>
+    <a href="<?= base_url('images/shows/rdogs-thumb.jpg') ?>" data-lightbox="shows" data-title="Reservoir Dogs - Another Tarantino movie with an interesting way of storytelling similar to Pulp Fiction."><img src="<?= base_url('images/shows/rdogs.jpg') ?>"></a>
+    <a href="<?= base_url('images/shows/boys-thumb.jpg') ?>" data-lightbox="shows" data-title="The Boys - A show that will give you a nice break to the oversaturation of superhero media. The show may be little too graphic for some though."><img src="<?= base_url('images/shows/boys.jpg') ?>"></a>
+    <a href="<?= base_url('images/shows/spiderbai-thumb.jpg') ?>" data-lightbox="shows" data-title="Spiderverse - Undoubtedly one of the best animated movies of all time. The characters and story are just as interesting too so it isn't just for show."><img src="<?= base_url('images/shows/spider.png') ?>"></a>
+    <a href="<?= base_url('images/shows/jjk-thumb.png') ?>" data-lightbox="shows" data-title="Jujutsu Kaisen - Are you strong because your nah i'd win or did you leave it all behind and his overwhelming intensity and stand proud you're strong because with this treasure I summon always bet on hakari? I'm you.&lt;/p&gt;"><img src="<?= base_url('images/shows/jjk.png') ?>"></a>
+    <a href="<?= base_url('images/shows/hxh-thumb.jpg') ?>" data-lightbox="shows" data-title="Hunter x Hunter - One of the best shonens of all time that is currently on a hiatus."><img src="<?= base_url('images/shows/hxh.jpg') ?>"></a>
+    <a href="<?= base_url('images/shows/fmab-thumb.jpg') ?>" data-lightbox="shows" data-title="Fullmetal Alchemist: Brotherhood - One of the first animes that I binged because it was so good. I really enjoyed the world building and the development of both major and minor characters."><img src="<?= base_url('images/shows/fmab.jpg') ?>"></a>
+    <a href="<?= base_url('images/shows/invincible-thumb.jpg') ?>" data-lightbox="shows" data-title="Invincible - Similar vibe to The Boys but at the same time, very different."><img src="<?= base_url('images/shows/invincible.jpg') ?>"></a>
+    <a href="<?= base_url('images/shows/hood-thumb.jpg') ?>" data-lightbox="shows" data-title="Batman: Under the Red Hood - A movie about my favorite comic book character who isn't really popular outside of Batman fans."><img src="<?= base_url('images/shows/hood.png') ?>"></a>
+</div>
+
   </div>
 </section>
 <section id="interest-3">
@@ -154,9 +158,26 @@ if ($Hour >= 0 && $Hour <= 11) {
     $greeting = getRandomGreeting($eveningGreetings);
 }
 
+
 echo "<script>";
 echo "var greeting = '$greeting';";
 echo "alert(greeting);";
 echo "</script>";
 ?>
+<script> 
+  // Soundboard stuff
+function sound(soundName) {
+    const soundPaths = {
+        'anita max win': '<?= base_url('sounds/anita.mp3') ?>',
+        'bruh': '<?= base_url('sounds/bruh.mp3') ?>',
+        'yowai mo': '<?= base_url('sounds/yowai.mp3') ?>',
+        'vine boom': '<?= base_url('sounds/boom.mp3') ?>',
+        'huh': '<?= base_url('sounds/huh.mp3') ?>',
+    };    
+    const audio = new Audio(soundPaths[soundName]);
+    audio.play();
+    const soundDesc = document.getElementById('sound-desc');
+    soundDesc.textContent = `${soundName}`;
+    }
+</script>
 </html>

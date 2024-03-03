@@ -1,3 +1,19 @@
+<link href="<?= base_url('CSS/style.css') ?>" rel="stylesheet">
+<style>
+    .topnav {
+        visibility: hidden;
+    }
+    * {
+        background-color: #1f1f1f;
+    }
+    a:link {
+        color: #007acc; /* Dark blue */
+    }
+    a:visited {
+        color: #9b8aff; /* Soft purple */
+    }
+</style>
+<title>News Archive</title>
 <h2><?= esc($title) ?></h2>
 
 <?php if (! empty($news) && is_array($news)): ?>

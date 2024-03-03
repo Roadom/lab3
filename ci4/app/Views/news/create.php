@@ -1,3 +1,10 @@
+<link href="<?= base_url('CSS/style.css') ?>" rel="stylesheet">
+<style>
+    .topnav {
+        visibility: hidden;
+    }
+</style>
+
 <h2><?= esc($title) ?></h2>
 
 <?= session()->getFlashdata('error') ?>
